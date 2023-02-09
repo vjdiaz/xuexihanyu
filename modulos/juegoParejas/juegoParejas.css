@@ -1,0 +1,61 @@
+/* Proyecto HanYu */
+
+.contenedorParejas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+  --fuente-dimension: 1.3em;
+}
+
+.panelParejas {
+  border: 1px solid black;
+  padding: 0.9em;
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.itemA {
+  padding: 0.3em;
+  font-size: calc(1.3 * var(--fuente-dimension));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(4 * var(--fuente-dimension));
+  border: 1px solid blue;
+}
+
+.itemB {
+  font-size: calc(1 * var(--fuente-dimension));
+  width: calc(8 * var(--fuente-dimension));
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.panelAjustes {
+  display: flex;
+  gap: 0.7em;
+}
+
+.panelAcciones {
+  display: flex;
+  gap: 0.7em;
+}
+.controlNumeroDeParejas {
+  display: flex;
+  gap: 0.7em;
+}
+
+.panelComprobacion {
+  display: flex;
+  gap: 0.7em;
+}
+
+.itemArrastrando {
+  background-color: rgb(190, 219, 254);
+}
+.mensaje {
+  color: var(--color-primario);
+}

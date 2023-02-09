@@ -1,0 +1,17 @@
+/* Han Yu */
+
+/****************************************************/
+.contenedorAjustes {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.control {
+  display: flex;
+  gap: 0.5em;
+}
+
+.conmutador {
+  font-size: 2em;
+}

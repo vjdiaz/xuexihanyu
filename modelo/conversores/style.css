@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.visor {
+  height: 20vh;
+  width: 50vw;
+}
