@@ -1,5 +1,7 @@
 /* Proyecto Hanyu */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&display=swap');
+
 /************************************************************************/
 * {
   padding: 0;
@@ -33,6 +35,8 @@
 }
 
 .cuerpo {
+
+font-family: 'Noto Serif SC', serif;
   padding: 1.5rem;
   flex: 1;
   display: flex;
