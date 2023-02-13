@@ -11,15 +11,22 @@
 
 :root {
   --color-fondo: hsl(60, 22%, 96%);
-  --color-primario: hsl(343, 63%, 51%);
-  --color-secundario: hsl(343, 56%, 65%);
+  --color-primario: hsl(343, 77%, 57%);
+  --color-secundario: hsl(343, 50%, 60%);
   --color-sobre-primario: white;
   --color-sobre-secundario: white;
+
+  --fuente-chino: 'Noto Serif SC', serif;
+  --fuente-chino-dimension : 16px;
+  --fuente-primaria: Arial, Helvetica, sans-serif;;
+  --fuente-primaria-dimension : 16px;
 }
 
 /************************************************************************/
 
 .lienzo {
+
+  font-family: var(--fuente-primaria);
   background-color: var(--color-fondo);
   min-height: 100vh;
 
@@ -30,13 +37,13 @@
 .cabecera {
   background-color: var(--color-primario);
   color: var(--color-sobre-primario);
-  padding: 2rem;
+  padding: calc(var(--fuente-chino-dimension));
   text-align: center;
 }
 
 .cuerpo {
-
-font-family: 'Noto Serif SC', serif;
+  font-family: var(--fuente-chino);
+  font-size: var(--fuente-chino-dimension);
   padding: 1.5rem;
   flex: 1;
   display: flex;

@@ -18,7 +18,7 @@ const atributosHTML = {
 export const visor = {
   ensamblaComponente() {
     creaContenedorNode();
-    habilitaEventos;
+    habilitaEventos();
     return contenedorNode;
   },
 
@@ -35,7 +35,9 @@ export const visor = {
 
     entradas.forEach((entrada, indice) => {
       const claseTarjeta =
-        indice == 0 ? atributosHTML.claseTarjetaActiva : atributosHTML.claseTarjetaEnLaDerecha;
+        indice == 0
+          ? atributosHTML.claseTarjetaActiva
+          : atributosHTML.claseTarjetaEnLaDerecha;
 
       // tarjetaHTML = `
       //   <div class="${claseTarjeta}">
@@ -60,7 +62,8 @@ export const visor = {
   actualizaContenidoTarjetaActiva() {
     if (contenedorNode == null) return;
     const numeroDeTarjetaActiva = juegoTarjetas.numeroDeTarjetaActiva();
-    const tarjetaActivaNode = contenedorNode.children[numeroDeTarjetaActiva - 1];
+    const tarjetaActivaNode =
+      contenedorNode.children[numeroDeTarjetaActiva - 1];
     const idEntrada = tarjetaActivaNode.id;
     const anversoNode = tarjetaActivaNode.children[0];
     const reversoNode = tarjetaActivaNode.children[1];
@@ -78,8 +81,10 @@ export const visor = {
 
     const numeroDeTarjetaActiva = juegoTarjetas.numeroDeTarjetaActiva();
     if (numeroDeTarjetaActiva > 1) {
-      const actualTarjetaActivaNode = contenedorNode.children[numeroDeTarjetaActiva - 1];
-      const nuevaTarjetaActivaNode = contenedorNode.children[numeroDeTarjetaActiva - 2];
+      const actualTarjetaActivaNode =
+        contenedorNode.children[numeroDeTarjetaActiva - 1];
+      const nuevaTarjetaActivaNode =
+        contenedorNode.children[numeroDeTarjetaActiva - 2];
       actualTarjetaActivaNode.classList = atributosHTML.claseTarjetaEnLaDerecha;
       nuevaTarjetaActivaNode.classList = atributosHTML.claseTarjetaActiva;
       juegoTarjetas.actualizaNumeroDeTarjetaActiva(numeroDeTarjetaActiva - 1);
@@ -94,9 +99,12 @@ export const visor = {
 
     const numeroDeTarjetaActiva = juegoTarjetas.numeroDeTarjetaActiva();
     if (numeroDeTarjetaActiva < numeroTotalDeTarjetas) {
-      const actualTarjetaActivaNode = contenedorNode.children[numeroDeTarjetaActiva - 1];
-      const nuevaTarjetaActivaNode = contenedorNode.children[numeroDeTarjetaActiva];
-      actualTarjetaActivaNode.classList = atributosHTML.claseTarjetaEnLaIzquierda;
+      const actualTarjetaActivaNode =
+        contenedorNode.children[numeroDeTarjetaActiva - 1];
+      const nuevaTarjetaActivaNode =
+        contenedorNode.children[numeroDeTarjetaActiva];
+      actualTarjetaActivaNode.classList =
+        atributosHTML.claseTarjetaEnLaIzquierda;
       nuevaTarjetaActivaNode.classList = atributosHTML.claseTarjetaActiva;
       juegoTarjetas.actualizaNumeroDeTarjetaActiva(numeroDeTarjetaActiva + 1);
     }

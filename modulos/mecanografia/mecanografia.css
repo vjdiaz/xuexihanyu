@@ -6,20 +6,21 @@
   align-items: center;
   gap: 1.8em;
 
-  --fuente-dimension: 3.7em;
+  --tamaño-fuente: calc(2 * var(--fuente-chino-dimension));
+
 }
 
 /* ************************************ */
 .panelPalabraDeMuestra {
-  border: 0.3em solid var(--color-primario);
+  width: calc(7 * var(--tamaño-fuente));
+  height: calc(3* var(--tamaño-fuente));
+  border: 0.1em solid var(--color-primario);
   border-radius: 15px;
+  text-align: center;
 }
 
 .palabra {
-  padding: 0.5em;
-  font-size: var(--fuente-dimension);
-  text-align: center;
-  width: calc(2 * var(--fuente-dimension));
+   font-size: var(--tamaño-fuente);
 }
 
 /* ************************************ */
@@ -28,5 +29,5 @@
 }
 
 .entrada {
-  font-size: calc(0.5 * var(--fuente-dimension));
+  font-size: calc(0.3 * var(--fuente-dimension));
 }

@@ -3,11 +3,14 @@
 /****************************************************/
 
 .contenedorJuegoTarjetas {
-  --altura-tarjeta: 400px;
-  --anchura-tarjeta: 600px;
+  --tamaño-fuente-tarjeta:  calc(2.5 * var(--fuente-chino-dimension));
+  --anchura-tarjeta: calc(6 * var(--tamaño-fuente-tarjeta));
+  --altura-tarjeta: calc(3* var(--tamaño-fuente-tarjeta));
+
+  /* --altura-tarjeta: clamp(100px,20vh,300px);
+  --anchura-tarjeta: clamp(200px,40vw,600px); */
   --color-tarjeta: beige;
   --color-sobre-tarjeta: black;
-  --tamaño-fuente-tarjeta: calc(0.15 * var(--anchura-tarjeta));
 
   background-color: var(--color-secundario);
   padding: 1.2em;

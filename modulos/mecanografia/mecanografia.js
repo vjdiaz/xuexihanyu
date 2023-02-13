@@ -38,7 +38,10 @@ export const mecanografia = {
     this.actualizaDatosJuego();
   },
   actualizaDatosJuego() {
-    const pinyinPlanoAux = modelo.recuperaAtributo(idPalabraMuestra, "pinyinPlano");
+    const pinyinPlanoAux = modelo.recuperaAtributo(
+      idPalabraMuestra,
+      "pinyinPlano"
+    );
     pinyinPlanoPalabraDeMuestra = pinyinPlanoAux.replace(/\s+/g, "");
 
     palabraDeMuestraNode.innerHTML = chino.palabraHTML(idPalabraMuestra);
@@ -83,16 +86,21 @@ function creaContenedorNode() {
 }
 
 function habilitaEventos() {
-  palabraDeEntradaNode.addEventListener("input", (e) => respuestaEscribirEnLaEntrada(e));
+  palabraDeEntradaNode.addEventListener("input", (e) =>
+    respuestaEscribirEnLaEntrada(e)
+  );
 }
 
 function deshabilitaEventos() {
-  palabraDeEntradaNode.removeEventListener("input", (e) => respuestaEscribirEnLaEntrada(e));
+  palabraDeEntradaNode.removeEventListener("input", (e) =>
+    respuestaEscribirEnLaEntrada(e)
+  );
 }
 
 function respuestaEscribirEnLaEntrada(e) {
-  const entradaAux = e.target.value;
-  const entrada = entradaAux.replace(/\s+/g, "");
+  const entradaOriginal = e.target.value;
+  let entrada = entradaOriginal.replace(/\s+/g, "");
+  entrada = entrada.toLowerCase();
 
   if (entrada == pinyinPlanoPalabraDeMuestra) {
     idPalabraMuestra = seleccionaPalabraDeMuestra();
