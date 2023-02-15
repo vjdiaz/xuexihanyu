@@ -1,6 +1,7 @@
 import { juegoTarjetas } from "../juegoTarjetas.js";
 import { tarjetas } from "../tarjetas.js";
 import { dom } from "../../dom.js";
+import { modelo } from "../../../modelo/modelo.js";
 
 let contenedorNode = null;
 const nombreContenedor = "Visor";
@@ -65,6 +66,12 @@ export const visor = {
     const tarjetaActivaNode =
       contenedorNode.children[numeroDeTarjetaActiva - 1];
     const idEntrada = tarjetaActivaNode.id;
+    console.log(
+      "<",
+      idEntrada,
+      "> ",
+      modelo.recuperaAtributo(idEntrada, "palabra")
+    );
     const anversoNode = tarjetaActivaNode.children[0];
     const reversoNode = tarjetaActivaNode.children[1];
 
