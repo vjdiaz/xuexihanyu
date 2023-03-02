@@ -7,7 +7,7 @@ palabra;pinyin;significado
 叫 ; jia4o ; llamarse
 什么 ; she2n me0 ; ¿qué?
 名字 ; mi2ng zi0 ; nombre
-欢迎 ; hua1n yi4ng ; Bienvenido
+欢迎 ; hua1n yi2ng ; Bienvenido
 谢谢 ; xie4 xie0 ; Gracias
 西班牙 ; xi1 ba1n ya2 ; España
 马丁 ; ma3 di1ng ; Martín
@@ -19,7 +19,7 @@ palabra;pinyin;significado
 他们 ; ta1 men0 ; ellos
 身体 ; she1n ti3 ; salud
 吗 ; ma0 ; interrogación
-都 ; dou1 ; todos
+都 ; do1u ; todos
 很 ; he3n ; muy
 忙 ; ma2ng ; ocupado
 李芳 ; li3 fa1ng ; Li Fang
@@ -56,12 +56,12 @@ palabra;pinyin;significado
 咖啡馆 ; ka1 fe1i gua3n ; cafetería
 旁边 ; pa2ng bia1n ; al lado de 
 银行 ; yi2n ha2ng ; banco
-点儿 ; dian3 er ; Un poco de algo
-苹果 ; ping2 guo3 ; manzana
+点儿 ; dia3n er ; Un poco de algo
+苹果 ; pi2ng guo3 ; manzana
 钱 ; qia2n ; dinero
 斤 ; ji1n ; unidad de peso (500gr)
 两 ; lia3ng ; dos
-块 ; kuai4 ; yuan
+块 ; kua4i ; yuan
 香蕉 ; xia1ng jia1o ; plátano
 一共 ; yi2 go4ng ; En total
 十二 ; shi2 er4 ; Número 12
@@ -79,7 +79,7 @@ palabra;pinyin;significado
 想 ; xia3ng ; querer, desear
 去 ; qu4 ; ir
 远 ; yua3n ; lejos
-比绞 ; bi3 jia4o ; bastante
+比较 ; bi3 jia4o ; bastante
 怎么 ; ze3n me0 ; ¿Cómo?
 坐 ; zuo4 ; tomar (coger) un vehículo
 火车 ; huo3 che1 ; tren
@@ -92,7 +92,7 @@ palabra;pinyin;significado
 也 ; ye3 ; también
 放心 ; fa4ng xi1n ; preocupado
 吧 ; ba0 ; particula expletiva
-生活 ; she1ng huo4 ; vida, vivir
+生活 ; she1ng hu4o ; vida, vivir
 习惯 ; xi2 gua4n ; acostumbrarse
 没问题 ; me2i we4n ti2 ; No hay problema
 学习 ; xue2 xi2 ; estudiar
@@ -112,14 +112,14 @@ palabra;pinyin;significado
 吗 ; ma0 ; particula expletiva
 对 ; dui4 ; correcto
 王大伟 ; wa2ng da4 we3i ; Gran David
-马丁 ; ma3 ding1 ; Martín
-汉语 ; han4 yu3 ; chino (lengua)
+马丁 ; ma3 Ding1 ; Martín
+汉语 ; ha4n yu3 ; chino (lengua)
 中国 ; zho1ng guo2 ; China
 西班牙语 ; xi1 ba1n ya2 yu3 ; español (idioma)
 墨西哥 ; mo4 xi1 ge1 ; México
 美国 ; me3i guo2 ; EEUU
-英国 ; yi1n guo2 ; Reino Unido
-英语 ; yi1n yu3 ; inglés
+英国 ; yi1ng guo2 ; Reino Unido
+英语 ; yi1ng yu3 ; inglés
 加拿大 ; jia1 na2 da4 ; Canadá
 法国 ; fa3 guo2 ; Francia
 法语 ; fa3 yu3 ; francés
@@ -147,11 +147,11 @@ palabra;pinyin;significado
 他们 ; ta1 men ; ellos
 她 ; ta1 ; ella
 她们 ; ta1 men ; ellas
-爸爸 ; ba4 ba4 ; papá
-妈妈 ; ma1 ma1 ; mamá
+爸爸 ; ba4 ba0 ; papá
+妈妈 ; ma1 ma0 ; mamá
 在 ; za4i ; en
 哪儿 ; na3 er0 ; dónde
-工作 ; go1ng1 zuo4 ; trabajar
+工作 ; go1ng zuo4 ; trabajar
 他 ; ta1 ; el
 医院 ; yi1 yua4n ; hospital
 医生 ; yi1 she1ng ; médico
@@ -161,7 +161,7 @@ palabra;pinyin;significado
 李芳 ; li3 fa1ng ; Li Fang
 玛利亚 ; ma3 li4 ya4 ; María
 爷爷 ; ye2 ye0 ; Abuelo paterno
-奶奶 ; nai3 nai0 ; Abuela paterna
+奶奶 ; na3i nai0 ; Abuela paterna
 哥哥 ; ge1 ge0 ; hermano mayor
 弟弟 ; di4 di0 ; hermano menor
 妹妹 ; me4i mei0 ; hermana menor

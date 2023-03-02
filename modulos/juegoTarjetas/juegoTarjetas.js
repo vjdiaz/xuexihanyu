@@ -137,5 +137,8 @@ function respuestaPulsarTecla(e) {
 
 function barajar() {
   entradas = modelo.barajaEntradas(entradas);
+  numeroDeTarjetaActiva = 1;
   visor.actualizaContenido();
+
+  navegacion.actualizaContenido();
 }

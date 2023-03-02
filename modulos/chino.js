@@ -101,8 +101,8 @@ export const chino = {
 
     const contenidoHTML = `
        <ruby class="palabraChina"> 
-           ${rubyHTML} 
-           <rt class="pinyin"> ${rtHTML} </rt>
+       ${rubyHTML} 
+       <rt class="pinyin"> ${rtHTML} </rt>
         </ruby> `;
 
     return contenidoHTML;
