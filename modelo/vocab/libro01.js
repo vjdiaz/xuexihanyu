@@ -686,7 +686,7 @@ export const libro01 = [
   { id: "hz000578", palabra: "机场", pinyin: "ji1 cha3ng", significado: "aeropuerto" },
   { id: "hz000579", palabra: "候机厅", pinyin: "ho4u ji1 ti1ng", significado: "sala de espera" },
   { id: "hz000580", palabra: "入口", pinyin: "ru4 ko3u", significado: "entrada" },
-  { id: "hz000581", palabra: "海关", pinyin: "ha3i  gua1n", significado: "aduana" },
+  { id: "hz000581", palabra: "海关", pinyin: "ha3i gua1n", significado: "aduana" },
   { id: "hz000582", palabra: "安检", pinyin: "a1n jia3n", significado: "control de seguridad" },
   { id: "hz000583", palabra: "出境", pinyin: "chu1 ji4ng", significado: "salir del país" },
   {

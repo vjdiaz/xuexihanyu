@@ -57,7 +57,7 @@ export const chino = {
   },
 
   codifica(pinyin) {
-    const arrayPinyin = pinyin.split(" ");
+    const arrayPinyin = pinyin.split(/\s+/);
 
     const array = arrayPinyin.map((p, index) => {
       return this.intepretaAcento(p);
