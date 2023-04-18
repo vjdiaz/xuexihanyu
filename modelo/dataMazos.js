@@ -1,5 +1,5 @@
 export const data = {
-  seleccion: ["l204"],
+  seleccion: ["l208"],
   mazos: {
     l101: palabras(1, 12),
     l102: palabras(13, 36),

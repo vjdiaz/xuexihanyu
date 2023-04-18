@@ -12,7 +12,7 @@
 .panelDePalabras {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(9em, auto));
   gap: 0.2em;
 }
 
