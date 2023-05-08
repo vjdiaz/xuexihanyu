@@ -34,8 +34,8 @@ export const data = {
     l205: palabras(916, 944),
     l206: palabras(945, 965),
     l207: palabras(966, 998),
-    l208: palabras(999, 1034),
-    l209: palabras(1035, 1066),
+    l208: palabras(999, 1035),
+    l209: palabras(1036, 1066),
     l210: palabras(1067, 1099),
   },
 };

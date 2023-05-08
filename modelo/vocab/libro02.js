@@ -268,7 +268,7 @@ export const libro02 = [
   { id: "hz001037", palabra: "熟悉", pinyin: "shu2 xi1", significado: "conocer bien" },
   { id: "hz001038", palabra: "敢", pinyin: "ga3n", significado: "atreverse" },
   { id: "hz001039", palabra: "到处", pinyin: "da4o chu4", significado: "por todas partes" },
-  { id: "hz001040", palabra: "跑", pinyin: "pa3o", significado: "recorrer" },
+  { id: "hz001040", palabra: "跑", pinyin: "pa2o", significado: "recorrer" },
   { id: "hz001041", palabra: "给", pinyin: "ge3i", significado: "dar" },
   { id: "hz001042", palabra: "印象", pinyin: "yi4n xia4ng", significado: "impresión" },
   { id: "hz001043", palabra: "如何", pinyin: "ru2 he2", significado: "qué, como" },
