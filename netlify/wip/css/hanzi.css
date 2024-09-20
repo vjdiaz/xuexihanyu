@@ -1,0 +1,50 @@
+/* Proyecto Hanyu */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&display=swap");
+
+/************************************************************************/
+
+:root {
+  --fuente-chino: "Noto Serif SC", serif;
+  --fuente-chino-dimension: 16px;
+}
+
+/************************************************************************/
+
+.palabra {
+  padding: 0.5em;
+  font-size: var(--fuente-dimension);
+  text-align: center;
+  width: calc(2 * var(--fuente-dimension));
+  ruby-position: inter-character;
+}
+.tono {
+  color: black;
+}
+.tono0 {
+  color: grey;
+}
+.tono1 {
+  color: brown;
+}
+.tono2 {
+  color: red;
+}
+.tono3 {
+  color: green;
+}
+.tono4 {
+  color: blue;
+}
+
+.pinyin {
+  display: flex;
+  justify-content: center;
+  gap: 0.2em;
+  font-size: 0.4em;
+}
+
+.significado {
+  text-align: center;
+  font-size: 0.7em;
+}

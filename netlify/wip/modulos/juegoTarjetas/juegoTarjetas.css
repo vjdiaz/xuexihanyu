@@ -1,0 +1,152 @@
+/* Proyecto HanYu */
+
+/****************************************************/
+
+.contenedorJuegoTarjetas {
+  --tamaño-fuente-tarjeta:  calc(2.5 * var(--fuente-chino-dimension));
+  --anchura-tarjeta: calc(6 * var(--tamaño-fuente-tarjeta));
+  --altura-tarjeta: calc(3* var(--tamaño-fuente-tarjeta));
+
+  /* --altura-tarjeta: clamp(100px,20vh,300px);
+  --anchura-tarjeta: clamp(200px,40vw,600px); */
+  --color-tarjeta: beige;
+  --color-sobre-tarjeta: black;
+
+  background-color: var(--color-secundario);
+  padding: 1.2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/****************************************************/
+.contenedorVisor {
+  font-size: var(--tamaño-fuente-tarjeta);
+  /* Dado que el contenido del visor (las tarjetas) va a ser reposicionado 
+     de forma absoluta, definimos explícitamente el tamaño antes de la reubicación  */
+  height: var(--altura-tarjeta);
+  width: var(--anchura-tarjeta);
+  border-radius: 0.2em;
+
+  /* Las tarjetas del mazo se pueden desplazar a la izquierda (siguiente) 
+  y a la derecha (anterior), de forma que sólo hay una visible  */
+  overflow: hidden;
+}
+
+/**********************************************************************/
+.tarjeta {
+  /* Las clases --activa, --izquierda y --derecha  aplican translaciones para distribuir las cartas en
+     montones a la izquierda y derecha, dejando en el visor visible sólo una tarjeta  */
+  /* El cambio de tarjeta se simula mediante traslaciones */
+  transition: transform 0.5s ease;
+
+  /* Referencia para el posicionamiento del anverso y reverso de las tarjetas */
+  position: relative;
+}
+
+.tarjeta--activa {
+  cursor: pointer;
+  transform: translateX(0);
+}
+
+.tarjeta--izquierda {
+  transform: translateX(-100%);
+}
+
+.tarjeta--derecha {
+  transform: translateX(100%);
+}
+
+/**********************************************************************/
+
+/* Las clases --anverso y --reverso modelan los lados de la tarjeta */
+.tarjeta__anverso,
+.tarjeta__reverso {
+  height: var(--altura-tarjeta);
+  width: var(--anchura-tarjeta);
+
+  background-color: var(--color-tarjeta);
+  color: var(--color-sobre-tarjeta);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Evita que durante el volteo se solapen los contenidos  
+     del anverso y reverso de la tarjeta activa */
+  /* https://developer.mozilla.org/es/docs/Web/CSS/backface-visibility */
+  backface-visibility: hidden;
+
+  /* Los dos lados se posicionan uno encima del otro y 
+     mediante rotaciones se simula el efecto de voltear 
+     la carta activa para intercambiar el lado visible */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: transform 0.8s ease;
+}
+
+.tarjeta__anverso {
+  transform: rotateX(0deg);
+}
+
+.tarjeta__reverso {
+  transform: rotateX(180deg);
+}
+
+.tarjeta--volteo .tarjeta__anverso {
+  transform: rotateX(180deg);
+}
+
+.tarjeta--volteo .tarjeta__reverso {
+  transform: rotateX(0deg);
+}
+
+/****************************************************/
+
+.contenedorNavegacion {
+  display: flex;
+  gap: 0.5em;
+}
+
+.desplazamiento {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.referencia {
+  font-size: 2em;
+  width: 3em;
+  text-align: center;
+}
+
+/* .cabeceraPinyin {
+  display: flex;
+  gap: 0.1em;
+} */
+
+/****************************************************/
+.contenedorAjustesJuegoTarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.panelAjustesModo {
+  display: flex;
+  gap: 0.7em;
+}
+
+.panelControles {
+  display: flex;
+  gap: 0.5em;
+}
+
+.conmutador {
+  font-size: 2em;
+}
