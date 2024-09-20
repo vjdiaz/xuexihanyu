@@ -54,16 +54,16 @@ function creaContenedorNode() {
     panelDePalabrasNode = dom.creaDivNode("panelDePalabras");
     contenedorNode.appendChild(panelDePalabrasNode);
   }
-  function creaPanelDeControl() {
-    const panelDeControlNode = dom.creaDivNode("panelDeControl");
-    contenedorNode.appendChild(panelDeControlNode);
+  // function creaPanelDeControl() {
+  //   const panelDeControlNode = dom.creaDivNode("panelDeControl");
+  //   contenedorNode.appendChild(panelDeControlNode);
 
-    btnSeleccionAleatoriaNode = dom.creaButtonNode("Seleccion aleatoria", "boton");
-    panelDeControlNode.appendChild(btnSeleccionAleatoriaNode);
+  //   btnSeleccionAleatoriaNode = dom.creaButtonNode("Seleccion aleatoria", "boton");
+  //   panelDeControlNode.appendChild(btnSeleccionAleatoriaNode);
 
-    btnSeleccionMazosNode = dom.creaButtonNode("Palabras de los mazos", "boton");
-    panelDeControlNode.appendChild(btnSeleccionMazosNode);
-  }
+  //   btnSeleccionMazosNode = dom.creaButtonNode("Palabras de los mazos", "boton");
+  //   panelDeControlNode.appendChild(btnSeleccionMazosNode);
+  // }
 
   contenedorNode = document.createElement("div");
   contenedorNode.id = atributosHTML.idContenedor;
@@ -73,17 +73,17 @@ function creaContenedorNode() {
   contenedorNode.appendChild(enlaceNode);
 
   creaPanelDePalabras();
-  creaPanelDeControl();
+  // creaPanelDeControl();
 }
 
 function habilitaEventos() {
-  btnSeleccionAleatoriaNode.addEventListener("click", respuestaPulsarSeleccionAleatoria);
-  btnSeleccionMazosNode.addEventListener("click", respuestaPulsarSeleccionMazos);
+  // btnSeleccionAleatoriaNode.addEventListener("click", respuestaPulsarSeleccionAleatoria);
+  // btnSeleccionMazosNode.addEventListener("click", respuestaPulsarSeleccionMazos);
 }
 
 function deshabilitaEventos() {
-  btnSeleccionAleatoriaNode.removeEventListener("click", respuestaPulsarSeleccionAleatoria);
-  btnSeleccionMazosNode.removeEventListener("click", respuestaPulsarSeleccionMazos);
+  // btnSeleccionAleatoriaNode.removeEventListener("click", respuestaPulsarSeleccionAleatoria);
+  // btnSeleccionMazosNode.removeEventListener("click", respuestaPulsarSeleccionMazos);
 }
 
 function actualizaPaneldePalabras() {
@@ -97,24 +97,24 @@ function actualizaPaneldePalabras() {
   });
 }
 
-function respuestaPulsarSeleccionAleatoria() {
-  entradas = modelo.recuperaIdDeTodasLasEntradas();
-  const longitud = entradas.length;
+// function respuestaPulsarSeleccionAleatoria() {
+//   entradas = modelo.recuperaIdDeTodasLasEntradas();
+//   const longitud = entradas.length;
 
-  numeroDePalabras = numeroDePalabras < longitud ? numeroDePalabras : longitud;
-  let indiceRealAleatorio = 0;
-  let indiceAleatorio = 0;
+//   numeroDePalabras = numeroDePalabras < longitud ? numeroDePalabras : longitud;
+//   let indiceRealAleatorio = 0;
+//   let indiceAleatorio = 0;
 
-  palabras = [];
-  for (let i = 0; i < numeroDePalabras; i++) {
-    indiceRealAleatorio = Math.random() * longitud;
-    indiceAleatorio = Math.floor(indiceRealAleatorio);
-    palabras[i] = entradas[indiceAleatorio];
-  }
-  actualizaPaneldePalabras();
-}
+//   palabras = [];
+//   for (let i = 0; i < numeroDePalabras; i++) {
+//     indiceRealAleatorio = Math.random() * longitud;
+//     indiceAleatorio = Math.floor(indiceRealAleatorio);
+//     palabras[i] = entradas[indiceAleatorio];
+//   }
+//   actualizaPaneldePalabras();
+// }
 
-function respuestaPulsarSeleccionMazos() {
-  palabras = modelo.recuperaPalabrasSeleccionadas();
-  actualizaPaneldePalabras();
-}
+// function respuestaPulsarSeleccionMazos() {
+//   palabras = modelo.recuperaPalabrasSeleccionadas();
+//   actualizaPaneldePalabras();
+// }

@@ -1,6 +1,5 @@
 /* Proyecto Hanyu */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Serif+SC&display=swap');
 
 /************************************************************************/
 * {
@@ -16,8 +15,6 @@
   --color-sobre-primario: white;
   --color-sobre-secundario: white;
 
-  --fuente-chino: 'Noto Serif SC', serif;
-  --fuente-chino-dimension : 16px;
   --fuente-primaria: Arial, Helvetica, sans-serif;;
   --fuente-primaria-dimension : 16px;
 }
@@ -56,41 +53,4 @@
   background-color: var(--color-secundario);
   color: var(--color-sobre-secundario);
   padding: 0.7rem;
-}
-
-.palabra {
-  padding: 0.5em;
-  font-size: var(--fuente-dimension);
-  text-align: center;
-  width: calc(2 * var(--fuente-dimension));
-  /* ruby-position: inter-character; */
-}
-.tono {
-  color: black;
-}
-.tono0 {
-  color: grey;
-}
-.tono1 {
-  color: brown;
-}
-.tono2 {
-  color: red;
-}
-.tono3 {
-  color: green;
-}
-.tono4 {
-  color: blue;
-}
-
-.pinyin {
-  display: flex;
-  justify-content: center;
-  gap: 0.2em;
-}
-
-.significado {
-  text-align: center;
-  font-size: 0.7em;
 }

@@ -9,8 +9,10 @@ const atributosHTML = {
   idContenedor: "contenedor" + nombreContenedor,
   claseContenedor: "contenedor" + nombreContenedor,
 };
+
 const hrefCSS = "./modulos/juegoParejas/juegoParejas.css";
-let numeroDeParejas = 12;
+let numeroDeParejas = 23;
+// let numeroDeParejas = 12;
 // let numeroMaxiomoDeParejas = 9;
 
 let contenedorNode = null;
@@ -101,21 +103,13 @@ function creaContenedorNode() {
     panelAjustesNode = dom.creaDivNode("panelAjustes");
     contenedorNode.appendChild(panelAjustesNode);
 
-    const pinyinLabelNode = dom.creaLabelNode(
-      "Pinyin",
-      "etiqueta",
-      "modoPinyin"
-    );
+    const pinyinLabelNode = dom.creaLabelNode("Pinyin", "etiqueta", "modoPinyin");
     modoPinyinNode = dom.creaRadioNode("controlModo", "radioModo", false);
     modoPinyinNode.id = "modoPinyin";
     panelAjustesNode.appendChild(pinyinLabelNode);
     panelAjustesNode.appendChild(modoPinyinNode);
 
-    const significadoLabelNode = dom.creaLabelNode(
-      "Significado",
-      "etiqueta",
-      "modoSignificado"
-    );
+    const significadoLabelNode = dom.creaLabelNode("Significado", "etiqueta", "modoSignificado");
     modoSignificadoNode = dom.creaRadioNode("controlModo", "radioModo", false);
     modoSignificadoNode.id = "modoSignificado";
     panelAjustesNode.appendChild(significadoLabelNode);
@@ -212,12 +206,8 @@ function habilitaEventos() {
     nodeDrag = panelParejasNode.children[2 * i + 1];
     nodeDrag.addEventListener("dragstart", (e) => respuestaInicioArrastre(e));
     nodeDrag.addEventListener("dragend", (e) => respuestaFinArrastre(e));
-    nodeDrag.addEventListener("dragenter", (e) =>
-      respuestaEntradaZonaSoltar(e)
-    );
-    nodeDrag.addEventListener("dragover", (e) =>
-      respuestaSobrevueloZonaSoltar(e)
-    );
+    nodeDrag.addEventListener("dragenter", (e) => respuestaEntradaZonaSoltar(e));
+    nodeDrag.addEventListener("dragover", (e) => respuestaSobrevueloZonaSoltar(e));
     nodeDrag.addEventListener("dragleave", (e) => respuestaSalirZonaSoltar(e));
     nodeDrag.addEventListener("drop", (e) => respuestaSoltar(e));
   }
@@ -235,19 +225,11 @@ function deshabilitaEventos() {
   let nodeDrag = null;
   for (let i = 0; i < numeroDeParejas; i++) {
     nodeDrag = panelParejasNode.children[2 * i + 1];
-    nodeDrag.removeEventListener("dragstart", (e) =>
-      respuestaInicioArrastre(e)
-    );
+    nodeDrag.removeEventListener("dragstart", (e) => respuestaInicioArrastre(e));
     nodeDrag.removeEventListener("dragend", (e) => respuestaFinArrastre(e));
-    nodeDrag.removeEventListener("dragenter", (e) =>
-      respuestaEntradaZonaSoltar(e)
-    );
-    nodeDrag.removeEventListener("dragover", (e) =>
-      respuestaSobrevueloZonaSoltar(e)
-    );
-    nodeDrag.removeEventListener("dragleave", (e) =>
-      respuestaSalirZonaSoltar(e)
-    );
+    nodeDrag.removeEventListener("dragenter", (e) => respuestaEntradaZonaSoltar(e));
+    nodeDrag.removeEventListener("dragover", (e) => respuestaSobrevueloZonaSoltar(e));
+    nodeDrag.removeEventListener("dragleave", (e) => respuestaSalirZonaSoltar(e));
     nodeDrag.removeEventListener("drop", (e) => respuestaSoltar(e));
   }
 }

@@ -1,5 +1,5 @@
 export const data = {
-  seleccion: ["l208"],
+  seleccion: ["l101"],
   mazos: {
     l101: palabras(1, 12),
     l102: palabras(13, 36),
@@ -36,7 +36,23 @@ export const data = {
     l207: palabras(966, 998),
     l208: palabras(999, 1035),
     l209: palabras(1036, 1066),
+    l209: palabras(1036, 1058),
     l210: palabras(1067, 1099),
+    l211: palabras(1100, 1138),
+    l212: palabras(1139, 1170),
+    // l213: palabras(1099, 1099),
+    // l214: palabras(1099, 1099),
+    // l215: palabras(1099, 1099),
+    // l216: palabras(1099, 1099),
+    // l217: palabras(1099, 1099),
+    // l218: palabras(1099, 1099),
+    // l219: palabras(1099, 1099),
+    // l220: palabras(1099, 1099),
+    // l221: palabras(1099, 1099),
+    // l222: palabras(1099, 1099),
+    // l223: palabras(1099, 1099),
+    // l224: palabras(1099, 1099),
+    // l225: palabras(1099, 1099),
   },
 };
 

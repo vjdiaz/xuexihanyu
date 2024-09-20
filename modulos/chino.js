@@ -99,11 +99,17 @@ export const chino = {
       rtHTML = arrayRtHTML.join("");
     }
 
+    // const contenidoHTML = `
+    //    <ruby class="palabraChina">
+    //    ${rubyHTML}
+    //    <rt class="pinyin"> ${rtHTML} </rt>
+    //     </ruby> `;
+
     const contenidoHTML = `
-       <ruby class="palabraChina"> 
+       <div class="palabraChina"> 
+       <div class="pinyin"> ${rtHTML} </div>
        ${rubyHTML} 
-       <rt class="pinyin"> ${rtHTML} </rt>
-        </ruby> `;
+        </div> `;
 
     return contenidoHTML;
   },

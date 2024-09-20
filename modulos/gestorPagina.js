@@ -8,7 +8,7 @@ import { ajustes } from "./ajustes/ajustes.js";
 import { inicio } from "./inicio/inicio.js";
 import { juegoTarjetas } from "./juegoTarjetas/juegoTarjetas.js";
 import { mecanografia } from "./mecanografia/mecanografia.js";
-import { juegoParejas } from "./juegoParejas/juegoParejas.js";
+// import { juegoParejas } from "./juegoParejas/juegoParejas.js";
 
 let componenteActualEnCuerpo = "";
 let panelMenuNode = document.getElementById("panelMenu");
@@ -21,8 +21,6 @@ export const gestorPagina = {
     muestraComponente("menuOpciones");
     muestraComponente("ajustes");
     muestraComponente("inicio");
-    // muestraComponente("juegoParejas");
-    // muestraComponente("juegoTarjetas");
   },
 
   notificacion(mensaje, datos) {
@@ -46,9 +44,9 @@ export const gestorPagina = {
       case "juegoTarjetas":
         juegoTarjetas.actualizaContenido();
         break;
-      case "juegoParejas":
-        juegoParejas.actualizaContenido();
-        break;
+      // case "juegoParejas":
+      //   juegoParejas.actualizaContenido();
+      //   break;
       case "mecanografia":
         mecanografia.comienzaJuego();
       case "inicio":
@@ -68,9 +66,9 @@ export const gestorPagina = {
       case "inicio":
         inicio.actualizaPalabras();
         break;
-      case "juegoParejas":
-        juegoParejas.actualizaParejas();
-        break;
+      // case "juegoParejas":
+      //   juegoParejas.actualizaParejas();
+      //   break;
       default:
         break;
     }
@@ -131,12 +129,11 @@ function muestraComponenteEnCuerpo(componente) {
       cuerpoNode.appendChild(componenteNode);
       mecanografia.comienzaJuego();
       break;
-    case "juegoParejas":
-      muestraComponente("menuMazos");
-
-      componenteNode = juegoParejas.ensamblaComponente();
-      cuerpoNode.appendChild(componenteNode);
-      break;
+    // case "juegoParejas":
+    //   muestraComponente("menuMazos");
+    //   componenteNode = juegoParejas.ensamblaComponente();
+    //   cuerpoNode.appendChild(componenteNode);
+    //   break;
     default:
       break;
   }
@@ -155,9 +152,9 @@ function eliminaComponenteActualEnCuerpo() {
     case "mecanografia":
       mecanografia.desensamblaComponente();
       break;
-    case "juegoParejas":
-      juegoParejas.desensamblaComponente();
-      break;
+    // case "juegoParejas":
+    //   juegoParejas.desensamblaComponente();
+    //   break;
     default:
       break;
   }

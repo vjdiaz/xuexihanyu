@@ -7,20 +7,19 @@
   gap: 1.8em;
 
   --tamaño-fuente: calc(2 * var(--fuente-chino-dimension));
-
 }
 
 /* ************************************ */
 .panelPalabraDeMuestra {
   width: calc(7 * var(--tamaño-fuente));
-  height: calc(3* var(--tamaño-fuente));
+  height: calc(3 * var(--tamaño-fuente));
   border: 0.1em solid var(--color-primario);
   border-radius: 15px;
   text-align: center;
 }
 
 .palabra {
-   font-size: var(--tamaño-fuente);
+  font-size: var(--tamaño-fuente);
 }
 
 /* ************************************ */

@@ -10,8 +10,8 @@ const atributosHTML = {
   claseContenedor: "contenedor" + nombreContenedor,
 };
 const hrefCSS = "./modulos/mecanografia/mecanografia.css";
-let contenedorNode = null;
 
+let contenedorNode = null;
 let palabraDeMuestraNode = null;
 let palabraDeEntradaNode = null;
 
@@ -37,11 +37,9 @@ export const mecanografia = {
     idPalabraMuestra = seleccionaPalabraDeMuestra();
     this.actualizaDatosJuego();
   },
+
   actualizaDatosJuego() {
-    const pinyinPlanoAux = modelo.recuperaAtributo(
-      idPalabraMuestra,
-      "pinyinPlano"
-    );
+    const pinyinPlanoAux = modelo.recuperaAtributo(idPalabraMuestra, "pinyinPlano");
     pinyinPlanoPalabraDeMuestra = pinyinPlanoAux.replace(/\s+/g, "");
 
     palabraDeMuestraNode.innerHTML = chino.palabraHTML(idPalabraMuestra);
@@ -86,15 +84,11 @@ function creaContenedorNode() {
 }
 
 function habilitaEventos() {
-  palabraDeEntradaNode.addEventListener("input", (e) =>
-    respuestaEscribirEnLaEntrada(e)
-  );
+  palabraDeEntradaNode.addEventListener("input", (e) => respuestaEscribirEnLaEntrada(e));
 }
 
 function deshabilitaEventos() {
-  palabraDeEntradaNode.removeEventListener("input", (e) =>
-    respuestaEscribirEnLaEntrada(e)
-  );
+  palabraDeEntradaNode.removeEventListener("input", (e) => respuestaEscribirEnLaEntrada(e));
 }
 
 function respuestaEscribirEnLaEntrada(e) {

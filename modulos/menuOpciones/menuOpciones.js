@@ -8,7 +8,7 @@ const opciones = {
   inicio: "inicio",
   tarjetas: "juegoTarjetas",
   mecanografia: "mecanografia",
-  parejas: "juegoParejas",
+  // parejas: "juegoParejas",
 };
 
 const nombreContenedor = "MenuOpciones";

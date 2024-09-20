@@ -5,7 +5,7 @@
 // Identificación del proyecto
 
 const versionNode = document.getElementById("version");
-versionNode.innerText = "v0.0";
+versionNode.innerText = "v1.0";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
