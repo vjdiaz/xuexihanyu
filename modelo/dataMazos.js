@@ -40,20 +40,22 @@ export const data = {
     l210: palabras(1067, 1099),
     l211: palabras(1100, 1138),
     l212: palabras(1139, 1177),
-    
-    l213: palabras(1178, 1209),
-    l214: palabras(1210, 1236),
-    l215: palabras(1237, 1265),
-    l216: palabras(1266, 1290),
-    l217: palabras(1291, 1327),
-    l218: palabras(1328, 1437),
-    l219: palabras(1348, 1370),
-    l220: palabras(1371, 1403),
-    l221: palabras(1404, 1425),
-    l222: palabras(1426, 1456),
-    l223: palabras(1457, 1479),
-    l224: palabras(1480, 1507),
-    l225: palabras(1508, 1529),
+
+    l213: palabras(1178, 1208),
+    l214: palabras(1209, 1235),
+    l215: palabras(1236, 1265),
+
+    l216: palabras(1266, 1295),
+
+    l217: palabras(1296, 1326),
+    l218: palabras(1327, 1436),
+    l219: palabras(1347, 1369),
+    l220: palabras(1370, 1402),
+    l221: palabras(1403, 1424),
+    l222: palabras(1425, 1455),
+    l223: palabras(1456, 1478),
+    l224: palabras(1479, 1506),
+    l225: palabras(1507, 1529),
   },
 };
 
