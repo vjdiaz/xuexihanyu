@@ -2024,6 +2024,7 @@ export const libro02 = [
     pinyin: "jie2 guo3",
     significado: "resultado",
   },
+
   { id: "hz001236", palabra: "表", pinyin: "bia3o", significado: " reloj " },
   {
     id: "hz001237",
@@ -2294,6 +2295,7 @@ export const libro02 = [
     pinyin: "lia3o jie3",
     significado: " conocer ",
   },
+
   {
     id: "hz001291",
     palabra: "爱好",
