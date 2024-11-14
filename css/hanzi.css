@@ -19,13 +19,13 @@
   ruby-position: inter-character;
 }
 .tono {
-  color: black;
+  color: brown;
 }
 .tono0 {
-  color: grey;
+  color: rgb(150, 150, 150);
 }
 .tono1 {
-  color: brown;
+  color: black;
 }
 .tono2 {
   color: red;

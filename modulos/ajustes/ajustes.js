@@ -4,7 +4,7 @@ import { gestorPagina } from "../gestorPagina.js";
 import { dom } from "../../modulos/dom.js";
 
 const valoresAjustes = {
-  pinyin: false,
+  pinyin: true,
   colorTonos: true,
 };
 
@@ -49,17 +49,30 @@ function creaContenedorNode() {
 
 function habilitaEventos() {
   pinyinConmutadorNode.addEventListener("change", respuestaPinyinControl);
-  colorTonosConmutadorNode.addEventListener("change", respuestaColorTonosControl);
+  colorTonosConmutadorNode.addEventListener(
+    "change",
+    respuestaColorTonosControl
+  );
 }
 function deshabilitaEventos() {
   pinyinConmutadorNode.removeEventListener("change", respuestaPinyinControl);
-  colorTonosConmutadorNode.removeEventListener("change", respuestaColorTonosControl);
+  colorTonosConmutadorNode.removeEventListener(
+    "change",
+    respuestaColorTonosControl
+  );
 }
 
 function creaPinyinControlNode() {
   const divNode = dom.creaDivNode("control");
-  const labelNode = dom.creaLabelNode("Mostrar Pinyin", "etiqueta", "pinyinConmutador");
-  pinyinConmutadorNode = dom.creaConmutadorNode("conmutador", valoresAjustes.pinyin);
+  const labelNode = dom.creaLabelNode(
+    "Mostrar Pinyin",
+    "etiqueta",
+    "pinyinConmutador"
+  );
+  pinyinConmutadorNode = dom.creaConmutadorNode(
+    "conmutador",
+    valoresAjustes.pinyin
+  );
   pinyinConmutadorNode.id = "pinyinConmutador";
   divNode.appendChild(labelNode);
   divNode.appendChild(pinyinConmutadorNode);
@@ -68,8 +81,15 @@ function creaPinyinControlNode() {
 
 function creaColorTonosControlNode() {
   const divNode = dom.creaDivNode("control");
-  const labelNode = dom.creaLabelNode("Color Tonos", "etiqueta", "colorTonosConmutador");
-  colorTonosConmutadorNode = dom.creaConmutadorNode("conmutador", valoresAjustes.colorTonos);
+  const labelNode = dom.creaLabelNode(
+    "Color Tonos",
+    "etiqueta",
+    "colorTonosConmutador"
+  );
+  colorTonosConmutadorNode = dom.creaConmutadorNode(
+    "conmutador",
+    valoresAjustes.colorTonos
+  );
   colorTonosConmutadorNode.id = "colorTonosConmutador";
   divNode.appendChild(labelNode);
   divNode.appendChild(colorTonosConmutadorNode);
